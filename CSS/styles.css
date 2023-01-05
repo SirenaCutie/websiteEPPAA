@@ -1,0 +1,1012 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/Roboto-Thin.woff') format('woff'), url('../Fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/Roboto-ThinItalic.woff') format('woff'), 
+       url('../Fonts/Roboto/Roboto-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/Roboto-Light.woff') format('woff'), 
+       url('../Fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/Roboto-Regular.woff') format('woff'), 
+       url('../Fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/Roboto-Italic.woff') format('woff'), 
+       url('../Fonts/Roboto-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/Roboto-Medium.woff') format('woff'), 
+       url('../Fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/Roboto-MediumItalic.woff') format('woff'), 
+       url('../Fonts/Roboto-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/Roboto-Bold.woff') format('woff'), 
+       url('../Fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/Roboto-Black.woff') format('woff'), 
+       url('../Fonts/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/Roboto-BlackItalic.woff') format('woff'), 
+       url('../Fonts/Roboto-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../Fonts/RobotoCondensed-Bold.woff') format('woff'), 
+       url('../Fonts/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../Fonts/RobotoCondensed-BoldItalic.woff') format('woff'), 
+       url('../Fonts/RobotoCondensed-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../Fonts/RobotoCondensed-Light.woff') format('woff'),
+       url('../Fonts/RobotoCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../Fonts/RobotoCondensed-LightItalic.woff') format('woff'),
+       url('../Fonts/boto/RobotoCondensed-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+/*:::::::::::::::TAGS EDITADAS:::::::::::::*/
+body{
+  font-family: Roboto,Helvetica,Arial;
+  margin:0px;
+  padding: 0px;
+  background-color:#eac36b;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+ul li{
+  list-style: none;
+  display: inline;
+}
+
+h1{ 
+  font-size: xx-large;
+  display: inline-block;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+p{
+  margin-top: -10px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/*:::::::::::::::FIM TAGS EDITADAS:::::::::::::*/
+
+/*:::::::::::::::CLASSES GERAIS:::::::::::::*/
+
+.titulo{
+  display: inline;
+  width: 5%;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+.centrartxt{
+  text-align: center;
+}
+/*:::::::::::::::FIM CLASSES GERAIS:::::::::::::*/
+
+/*:::::::::::::::INICIO MENU:::::::::::::::::::*/
+#menu{
+  width: 100%;
+  height: 50px;
+  top: 0;
+  background-color:#53647e;   
+  overflow: hidden;
+  text-align: right;
+  display: inline;
+  position: fixed;
+  z-index: 2;
+} 
+
+#menu a {
+  text-decoration: none;
+  color: #f2f2f2;
+  padding: 14px 16px; 
+  font-size: 17px;
+  display: inline;    
+}
+
+#menu a:hover{
+  color: #EC616D;
+}
+
+.logoeppaasecpos{
+  width: 100px;
+  height: 50px;
+  float: left;
+  overflow-y: visible;
+  padding-top: 4px;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.linha1{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+}
+.linha2{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+}
+.linha3{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+}
+
+.logoeppaasec{
+  height: 40px;
+  width: 40px;
+}
+
+/*:::::::::::::::FIM MENU:::::::::::::::::::::*/
+
+/*:::::::::::::::INCIO HOME:::::::::::::::::::*/
+
+.bgeral{
+  font-size:36px;
+  height: 100vh;
+  margin-top: 50px;
+}
+
+.texto{
+  position: relative;
+  display: inline;
+  top: 50px;
+  left: 5%;
+  width: 39%;
+}
+.textopos{
+  margin-left: 50px;
+
+}
+.EPP{
+  font-weight: lighter;
+  color:#e61873;
+  display: block;
+  z-index: 2;
+}
+
+.AA{
+  color:#e61873;
+  margin-top: -40px;
+  z-index: 2;
+}
+
+.abril{
+  color: #EC616D;
+  display: block;
+  margin-top: -43px;
+  z-index: 2;
+}
+
+.toppos{
+  position: relative;
+  display: inline;
+  width: 100%;
+  height: 300px;
+  background-color: red;
+
+}
+
+.objetos{
+  position: relative;
+
+}
+
+.mao_vermelha{
+  position: absolute;
+  padding-left: 81%;
+  top:-250px;
+}
+
+.bgeral1{
+  position: relative;
+  display: inline-block;
+  width: 50%;
+}
+
+.logoeppaapos{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mao_laranja{
+  position: absolute;
+  padding-top: 320px;
+  left: -60px;
+}
+
+/*tamanhos img*/
+
+.maovermelha{
+  height: 350px;  
+}
+.maolaranja{
+  height: 340px;
+
+}
+.LogoEPPAA{
+  height: 400px;
+}
+.botpos{
+  display: inline-block;
+  width: 100%;
+  height: 350px;
+  padding-top: 320px;
+}
+
+.inscricoes{
+  color: white;
+  background-color: #e61873;
+  padding-left: 120px;
+  padding-right: 120px;
+  width: 100%;
+  height: 103px;
+  border: none;
+  border-radius: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  float: right;
+}
+.inscricoes:hover{
+  background-color: #ad1258;
+}
+.posinscricoes{
+  float: right;
+  margin-top: 13%;
+  margin-right: 8%;
+}
+
+/*:::::::::::::::FIM HOME:::::::::::::::::::*/
+
+/*:::::::::::::::INICIO PROGRAMA:::::::::::::*/
+
+.download { 
+  background-color: #e61873; 
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.download:hover{
+  background-color: #cf1668;
+}
+
+.posbtn{
+  position: relative;
+  display: inline-block;
+  top: 0;
+  width: 7%;
+}
+
+#bgprograma{
+  background-color: #EC616D;
+  height: 100vh;
+
+}
+.programa{
+  display: inline;
+  width: 5%;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+.programatop{
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 15%;
+  margin-left: 1%;
+  padding-top:5%;
+}
+
+.posPrograma{
+  padding-top: 10px;
+  position: relative;
+  padding-left: 3.5%; 
+  width: 94%;
+  font-size: 2em;
+  
+}
+.phoras{
+  display: inline-block;
+  font-weight: lighter;
+}
+
+.pinline{
+  display: inline-block;
+  font-size: 0.8em;
+  margin-left: 3%;
+}
+.pinline1{
+  display: block;
+  font-size: 0.5em;
+  margin-left: 8.5%;
+}
+
+.pinlinelight{
+  display: inline-block;
+  font-weight:lighter;
+  font-size: 0.8em;
+  margin-left: 3%;
+}
+
+/*:::::::::::::::FIM PROGRAMA:::::::::::::*/
+
+/*:::::::::::::::ORADORES:::::::::::::*/
+
+#bgoradores{
+  height: 100vh;
+
+}
+.oradores{
+  text-align: center;
+  padding-top: 5%;
+}
+
+.caixa{
+  width: 100%;
+  height: 60%;
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+}
+.retangulo{
+  width: 100%;
+  height: 50%;
+}
+.quadrado1{
+  width: 200px;
+  height: 200px;
+  border: solid;
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+  margin-left: 17%;
+
+}
+.balao1{
+  width: 752px;
+  height: 200px;
+  background-color: #53647e;
+  display: inline-block;
+  margin-left: 100px;
+  position: relative;
+  border-radius: 50px;
+  top: -110px;
+}
+
+.quadrado2{
+  width: 200px;
+  height: 200px;
+  border: solid;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 30px;
+  position:relative;
+  margin-left: 62.5%;
+}
+.balao2{
+  width: 752px;
+  height: 200px;
+  background-color: #53647e;
+  display: inline-block;
+  margin-left: 300px;
+  position: relative;
+  top: -245px;
+  border-radius: 50px;
+}
+
+.tamimg{
+  width: 200px; 
+  height: 200px;
+}
+.tamimgblock{
+  width: 200px; 
+  height: 200px;
+  display: block; 
+}
+
+.txtbalao{
+  padding: 50px;
+  text-align: left;
+}
+
+/*:::::::::::::::FIM ORADORES:::::::::::::*/
+
+/*:::::::::::::::INICIO SESSOES:::::::::::::*/
+
+/*:::::::::::::::INICIO CARROSSEL:::::::::::::*/
+
+
+.container{
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+.image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button-wrapper{
+  position: absolute;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  box-shadow: 2px 2px 10px black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: black;
+  color: white;
+}
+
+.indicator-wrapper{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50px;
+}
+
+.indicator{
+  display: none;
+}
+
+.indicator:checked + .label::before{
+  background-color: orange;
+}
+
+.label::before{
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: block;
+  content: "";
+  border: 2px solid white;
+  cursor: pointer;
+
+}
+
+.indicator-group{
+  margin-right: 15px;
+}
+
+.indicator-group:last-of-type{
+  margin-right:0;
+}
+
+/*FIM CARROSSEL*/
+
+#bgsessoes{
+  height: 100vh;
+}
+
+/*:::::::::::::::FIM SESSOES:::::::::::::*/
+
+/*::::::::::::::: INICIO SOBRE:::::::::::::*/
+
+#bgsobre{
+  height: 85vh;
+  background-color: #EC616D;
+  font-size:2em;
+  max-height: 50rem;
+}
+
+.imgsobre{
+  position: relative;
+  height:100%;
+  width:100%;
+}
+
+.rosto_m{
+  position:relative;
+  left:-2em;
+  top: -70px;
+}
+.rosto_f{
+  position:relative;
+  left:-1em;
+  margin-left: 1600px;
+  position: relative;
+  margin-top: -720px;
+}
+
+.rosto1{
+  height:100%;
+}
+
+.rostod{
+  position:relative;
+  left:60%;
+  top: 0;
+  display:inline;
+  
+}
+
+.txtsobre{
+  position:relative;
+  height:60%;
+  width:40%;
+  left:32%;
+  bottom: 150px;
+}
+
+.psobre{
+  text-align: left;
+  margin-top: -100%; 
+  font-weight: 200;
+}
+
+
+/*:::::::::::::::FIM SOBRE:::::::::::::*/
+
+/*:::::::::::::::INICIO EBOOK:::::::::::::*/
+
+.ebooks{
+  height: 100vh;
+}
+
+.pesc {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.pesc img {
+  position: relative;
+  top: -853px;
+  right: -1550px;
+}
+.pesc1 {
+  position: relative;
+
+}
+.pesc1 img {
+  position: absolute;
+  top: -1145px;
+  left: -272px;
+  transform: scale(1.2);
+
+}
+
+.livro
+{
+  width: 700px;
+  height: 500px;
+  padding-top: 10px;
+  padding-left: 100px;
+  
+}
+.livr{
+  height: auto;
+}
+.ebook
+{
+  display: inline;
+  width: 5%;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+.underebook
+{
+  font-size:large;
+  position: relative;
+  top: 260px;
+  left: 445px;
+
+}
+.tmlivro
+{
+  font-size: x-large;
+}
+
+.textolivro1
+{
+  position: relative;
+  font-size: 40px;
+  padding-left: 40%;
+  top: -400px;
+  width: 50%;
+  font-weight: bold;
+}
+.textolivro2
+{
+  margin-top: -40px;
+  font-size: 20px;
+  font-weight: lighter;
+
+}
+
+.textolivro3
+{
+  font-size: 20px;
+  font-weight: lighetr;
+
+}
+
+/*:::::::::::::::FIM EBOOK:::::::::::::*/
+
+/*::::::::::::::: INICIO FOOTER:::::::::::::*/
+
+.footer{
+  height: 40vh;
+  background-color: #53647e;
+}
+
+.bgfooter{
+  display: inline-block;
+  
+}
+.parcerias{
+  width: 200px;
+}
+.redessociais{
+  width: 80%;
+}
+
+.txtredes{
+  position: relative;
+  display: inline;
+  padding: 10px;
+  bottom: 10px;
+}
+.bgfooter{
+  padding: 20px;
+}
+.logoipvtam{
+  height: 50px;
+}
+/*:::::::::::::::FIM FOOTER:::::::::::::*/  
+
+/*:::::::::::::::RESPONSIVE DESIGN::::::::::::::*/
+
+@media screen and (max-width: 768px){
+
+/*:::::::::::::TAGS::::::::::::*/
+body{
+  overflow-x: hidden ;
+}
+
+/*:::::::::::::INICIO DO MENU::::::::::::*/
+
+#menu{
+  overflow: visible;
+  display: inline-block;
+}
+
+#menu a{
+  display: block;
+}
+
+.hamburger{
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 20px;
+
+}
+
+.menu_links{
+  position: absolute;
+  background-color:#53647e; 
+  top:3.7vh;
+  right: 0;
+  height: 100vh;
+  width: 20%;
+  padding: 10px;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+
+.menu_links li{
+  opacity: 0;
+}
+
+.logoeppaasecpos{
+  position: absolute;
+  top: -14px;
+}
+
+/*:::::::::::::FIM MENU::::::...::::::*/
+
+.maolaranja{
+  display: none;
+}
+.maovermelha{
+  display: none;
+}
+.LogoEPPAA{
+  position:absolute ;
+  transform: scale(0.4);
+  left: -280px;
+}
+
+.posPrograma{
+  transform: scale(0.7);
+  left: -60px;
+  top: -150px;
+}
+
+.rosto1{
+  display: none;
+}
+
+.rosto2{
+  display: none;
+}
+
+.psobre{
+  position: relative;
+  top: 0px;
+  margin-left: -80px;
+  width: 500px;
+  transform: scale(0.9);
+}
+
+
+.textolivro1{
+ width: 500px;
+ position: relative;
+ margin-top: -20px;
+ left: -150px;
+}
+
+.caixa{
+  transform: scale(0.8);
+}
+.quadrado1{
+  position: absolute;
+  left: 20%;
+}
+.balao1{
+  position: absolute;
+  margin-top: 380px;
+  left: -100px;
+  transform: scale(0.9);
+}
+.quadrado2{
+  position: absolute;
+  left: -20%;
+  margin-top: 90px;
+}
+.balao2{
+  position: relative;
+  top: 50px;
+  left: -20%;
+  transform: scale(0.9);
+}
+
+/*FIM DESIGN RESPONSIVO TELE*/
+}
+
+/*animaçoes menu*/
+.menu-ativo{
+  transform: translateX(0%);
+}
+
+.alternar .linha1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.alternar .linha2{
+  opacity: 0;
+}
+
+.alternar .linha3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@media screen and (max-width: 1500px){
+
+
+  .imgsobre{
+    transform: scale(1);
+  }
+  .rosto_m{
+    position: relative;
+    left: -100px;
+  }
+
+  .rosto_f{
+    display: none;
+  }
+
+  .psobre{
+    position: absolute;
+    width: 500px;
+    left: 100px;
+    top: -300px;
+  }
+  .ebook h1{
+    display: none;
+  }
+  .livro{
+    display: none;
+  }
+  .underebook{
+    display: none;
+  }
+  .textobook{
+   position: relative;
+   top: 500px;
+   left: 50px;
+   width: 1000px;
+   height: 500px;
+    
+  }
+  .maolaranja{
+    display: none;
+  }
+  .maovermelha{
+    display: none;
+  }
+
+  .caixa{
+    transform: scale(0.8);
+    margin-top: -30px;
+  }
+
+  .quadrado1{
+    position: absolute;
+    margin-top: -10px;
+    left: 25%;
+  }
+  .balao1{
+    margin-top: 380px;
+    margin-left: 20%;
+    transform: scale(0.9);
+  }
+  .quadrado2{
+
+    left: -20%;
+    top: 75%;
+  }
+  .balao2{
+
+    margin-top: 480px;
+    margin-left: 20%;
+    transform: scale(0.9);
+  }
+
+}
+
+@media screen and (max-width: 1000px){
+  .rosto_m{display: none;}
+  .psobre{
+    position: relative;
+    top: 0px;
+  }
+
+  .psobre{
+    position: relative;
+    top: 300px;
+    left: -50px;
+  }
+  .textobook{
+    position: relative;
+    margin-top: 100px;
+    left: 150px;
+    width: 1200px;
+    margin-left: -450px;
+  }
+
+}
